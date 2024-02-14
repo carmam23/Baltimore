@@ -22,6 +22,25 @@ rutaFichero <- "data/Baltimore_City_Employee_Salaries_FY_2022.csv"
 datosRbase <- read.csv(rutaFichero) 
 View(datosRbase)
 
+```
+
+# Importamos datos con readR
+
+```{r}
+rutaFichero2 <- "data/Baltimore_City_Employee_Salaries_FY_2022.csv"
+library(readr)
+dataReadR <- read_csv(rutaFichero2)
+View(dataReadR)
+
+
+```
+# Importamos con RIO
+
+```{r}
+library(rio)
 
 
 
+
+
+```
