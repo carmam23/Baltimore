@@ -29,7 +29,7 @@ View(datosRbase)
 ```{r}
 rutaFichero2 <- "data/Baltimore_City_Employee_Salaries_FY_2022.csv"
 library(readr)
-dataReadR <- read_csv(rutaFichero2)
+dataReadR <- read_csv(rutaFichero2, col_types = cols(HireDate =  col_date(format = "%Y-%m-%d")))
 View(dataReadR)
 
 
@@ -38,6 +38,7 @@ View(dataReadR)
 
 ```{r}
 library(rio)
+datosRIO <- import(rutaFichero)
 
 
 
